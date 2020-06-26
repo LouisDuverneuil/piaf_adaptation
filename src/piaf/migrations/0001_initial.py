@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
-                ('theme', models.CharField(choices=[('Religion', 'Religion'), ('Géographie', 'Géographie'), ('Histoire', 'Histoire'), ('Sport', 'Sport'), ('Arts', 'Arts'), ('Société', 'Société'), ('Sciences', 'Sciences')], max_length=20)),
+                ('theme', models.CharField(choices=[('Ingénierie', 'Ingénierie'), ('R&D', 'R&D'), ('Qualité', 'Qualité'), ('Affaires réglementaires', 'Affaires réglementaires'), ('Anomalies', 'Anomalies'), ('Laboratoire', 'Laboratoire'), ('Qualif valid', 'Qualif valid')], max_length=20)),
                 ('reference', models.CharField(max_length=10)),
                 ('audience', models.CharField(choices=[('restricted', 'restricted'), ('all', 'all')], default='all', max_length=10)),
             ],
