@@ -67,7 +67,7 @@ class AdminDatasetView(SuperUserMixin, TemplateView):
         data = json.loads(content).get("data")
         for d in data:
             name = d["displaytitle"] if "displaytitle" in d == True else d["title"]
-            cat = d["categorie"] if "categorie" in d == True else "Société"
+            cat = d["categorie"] if "categorie" in d == True else "Anomalies"
             ref = d["reference"] if "reference" in d == True else 0
             article = Article(
                 name=name,
