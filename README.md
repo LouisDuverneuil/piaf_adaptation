@@ -19,8 +19,8 @@ It handles the following features :
 First clone the repo:
 
 ```bash
-git clone https://github.com/etalab/piaf.git
-cd piaf
+git clone https://github.com/LouisDuverneuil/piaf_adaptation.git
+cd piaf_adaptation
 ```
 
 Then create the environment variables (you can customise your API keys and passwords):
