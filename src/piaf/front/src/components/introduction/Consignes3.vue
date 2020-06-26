@@ -35,21 +35,9 @@
       </v-layout>
       <v-layout justify-center>
         <span class="font-weight-thin mt-2 white--text zind0">Les textes sont classés selon les thèmes suivant. Lequel préferez-vous ?</span>
-      </v-layout>
-      <v-layout row justify-center>
-        <v-flex xs6 sm4 md3
-          v-for="(theme) in themes"
-          v-on:click="setCurrentTheme(theme)"
-          :key="theme.name"
-        >
-          <div class="my-2 d-flex flex-column align-center">
-            <v-btn fab large dark v-bind:color="theme.color" v-if="!theme.empty">
-              <v-icon>{{theme.logo}}</v-icon>
-            </v-btn>
-            <span class="font-weight-thin white--text zind0">{{theme.name}}</span>
-          </div>
-        </v-flex>
-      </v-layout>
+      
+      <div data-v-982863c4="" class="layout text-center wrap"><div data-v-982863c4="" class="layout row justify-center"><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large primary"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-book-open-page-variant theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Ingénierie</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large warning"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-map-search theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Géographie</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large error"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-city-variant theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Société</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large success"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-basketball theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Sport</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large secondary"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-alpha-r theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Religion</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large info"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-palette theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Arts</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large accent"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-telescope theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Sciences</span></div></div><div data-v-982863c4="" class="flex xs6 sm4 md3"><div data-v-982863c4="" class="my-2 d-flex flex-column align-center"><button data-v-982863c4="" type="button" class="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--large black"><span class="v-btn__content"><i data-v-982863c4="" aria-hidden="true" class="v-icon notranslate mdi mdi-help-circle theme--dark"></i></span></button><span data-v-982863c4="" class="font-weight-thin white--text zind0">Mystère</span></div></div></div></div>
+
     </span>
   </v-container>
 </template>
