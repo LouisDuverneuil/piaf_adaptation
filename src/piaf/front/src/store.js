@@ -57,7 +57,7 @@ export default new Vuex.Store({
       },
       {
         name: "R&D",
-        logo: "mdi-map-search",
+        logo: "mdi-compass",
         color: "warning",
         empty: false,
       },
