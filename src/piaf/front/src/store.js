@@ -69,7 +69,7 @@ export default new Vuex.Store({
       },
       {
         name: "Affaires réglementaires",
-        logo: "mdi-basketball",
+        logo: "mdi-bank",
         color: "success",
         empty: false,
       },
