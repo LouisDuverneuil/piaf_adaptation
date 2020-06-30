@@ -51,19 +51,19 @@ export default new Vuex.Store({
     themes: [
       {
         name: "Ingénierie",
-        logo: "mdi-book-open-page-variant",
+        logo: "mdi-wrench",
         color: "primary",
         empty: false,
       },
       {
         name: "R&D",
-        logo: "mdi-compass",
+        logo: "mdi-magnify",
         color: "warning",
         empty: false,
       },
       {
         name: "Qualité",
-        logo: "mdi-city-variant",
+        logo: "mdi-quality-high",
         color: "error",
         empty: false,
       },
@@ -75,13 +75,13 @@ export default new Vuex.Store({
       },
       {
         name: "Anomalies",
-        logo: "mdi-alpha-r",
+        logo: "mdi-alert",
         color: "secondary",
         empty: false,
       },
       {
         name: "Laboratoire",
-        logo: "mdi-palette",
+        logo: "mdi-flask-outline",
         color: "info",
         empty: false,
       },
