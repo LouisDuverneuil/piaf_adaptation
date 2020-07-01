@@ -12,6 +12,7 @@ from django.db.models import Count
 from api.permissions import SuperUserMixin
 from .models import Article, ParagraphBatch, Paragraph, Question, Answer, UserRelevancy
 
+THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"] 
 
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "front/index.html"
