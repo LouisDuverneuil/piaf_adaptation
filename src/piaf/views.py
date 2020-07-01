@@ -24,7 +24,6 @@ class AdminView(SuperUserMixin, TemplateView):
 class AdminDatasetView(SuperUserMixin, TemplateView):
     template_name = "piaf/admin.html"
     count_inserted_articles = None
-    THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"]
 
     def get(self, request, *args, **kwargs):
         data = []
@@ -68,7 +67,7 @@ class AdminDatasetView(SuperUserMixin, TemplateView):
         data = json.loads(content).get("data")
         for d in data:
             name = d["displaytitle"] if "displaytitle" in d == True else d["title"]
-            cat = d["categorie"] if "categorie" in d and d["categorie"] in THEMES else "Anomalies"
+            cat = d["categorie"] if "categorie" in d and d["categorie"] in ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"] else "Anomalies"
             ref = d["reference"] if "reference" in d == True else 0
             article = Article(
                 name=name,
