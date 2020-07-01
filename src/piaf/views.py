@@ -12,7 +12,6 @@ from django.db.models import Count
 from api.permissions import SuperUserMixin
 from .models import Article, ParagraphBatch, Paragraph, Question, Answer, UserRelevancy
 
-THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"] 
 
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "front/index.html"
@@ -25,6 +24,7 @@ class AdminView(SuperUserMixin, TemplateView):
 class AdminDatasetView(SuperUserMixin, TemplateView):
     template_name = "piaf/admin.html"
     count_inserted_articles = None
+    THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"]
 
     def get(self, request, *args, **kwargs):
         data = []
