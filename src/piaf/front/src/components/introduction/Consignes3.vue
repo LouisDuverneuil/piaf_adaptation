@@ -43,7 +43,7 @@
           :key="theme.name"
         >
           <div class="my-2 d-flex flex-column align-center">
-            <v-btn fab large dark v-bind:color="theme.color" v-if="!theme.empty">
+            <v-btn fab large dark v-bind:color="theme.color" v-bind:disabled="theme.empty">
               <v-icon>{{theme.logo}}</v-icon>
             </v-btn>
             <span class="font-weight-thin white--text zind0">{{theme.name}}</span>
