@@ -63,7 +63,7 @@ class AdminDatasetView(SuperUserMixin, TemplateView):
         return response
 
     def post(self, request, *args, **kwargs):
-        THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"]
+        THEMES = ["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "Bonnes pratiques de fabrication", "Assurance qualité et BPF"]
         content = request.FILES["file"].read()
         data = json.loads(content).get("data")
         for d in data:
