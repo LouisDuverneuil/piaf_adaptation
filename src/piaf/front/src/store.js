@@ -80,13 +80,13 @@ export default new Vuex.Store({
         empty: false,
       },
       {
-        name: "Bonnes pratiques de fabrication",
+        name: "BPF",
         logo: "mdi-flask",
         color: "info",
         empty: false,
       },
       {
-        name: "Assurance qualité et BPF",
+        name: "Assurance qualité",
         logo: "mdi-quality-high",
         color: "accent",
         empty: false,
