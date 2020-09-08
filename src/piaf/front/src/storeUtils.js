@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export async function getNewParagraph(theme) {
-  let t = (["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "Bonnes pratiques de fabrication", "Assurance qualité et BPF"].indexOf(theme) !== -1)
+  let t = (["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "BPF", "Assurance qualité"].indexOf(theme) !== -1)
   ? '?theme='+theme
   : ''
   try {
@@ -90,7 +90,7 @@ export async function getUserDetails() {
 }
 
 export async function getDatasetInfo(theme) {
-  let t = (['Ingénierie', 'R&D', 'Qualité', 'Affaires réglementaires', 'Anomalies', 'Laboratoire', 'Qualif valid'].indexOf(theme) !== -1)
+  let t = (["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "BPF", "Assurance qualité"].indexOf(theme) !== -1)
   ? '?theme='+theme
   : ''
   try {
