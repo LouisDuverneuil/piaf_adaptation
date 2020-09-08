@@ -17,7 +17,7 @@ export async function getNewParagraph(theme) {
 }
 
 export async function getNewQuestion(theme) {
-  let t = (['Ingénierie', 'R&D', 'Qualité', 'Affaires réglementaires', 'Anomalies', 'Laboratoire', 'Qualif valid'].indexOf(theme) !== -1)
+  let t = (["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "BPF", "Assurance qualité"].indexOf(theme) !== -1)
   ? '?theme='+theme
   : ''
   try {
