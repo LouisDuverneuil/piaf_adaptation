@@ -8,7 +8,7 @@ STATUS_PROGRESS = "progress"
 STATUS_COMPLETED = "completed"
 STATUSES = [STATUS_PENDING, STATUS_PROGRESS, STATUS_COMPLETED]
 
-THEMES = ["Ingénierie", "R&D", "Qualité", "Affaires réglementaires", "Anomalies", "Laboratoire", "Qualif valid"] 
+THEMES = ["Validation méthode", "Conditionnement", "Gestion des risques", "Mise sur le marché", "Validation procédé", "Bonnes pratiques de fabrication", "Assurance qualité et BPF"] 
 THEME_CHOICES = zip(THEMES, THEMES)
 
 AUDIENCES = ["restricted", "all"]
