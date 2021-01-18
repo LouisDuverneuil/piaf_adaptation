@@ -52,7 +52,7 @@ ENV DEBUG="True"
 ENV http_proxy="http://172.20.210.22:9090/"
 ENV https_proxy="http://172.20.210.22:9090/"
 ENV SECRET_KEY="change-me-in-production"
-ENV PORT="8000"
+ENV PORT="8040"
 ENV WORKERS="2"
 ENV MATOMO_SITE_ID=""
 
